@@ -1,6 +1,6 @@
 algoritmo "Agencia De Viagens"
-// Disciplina   : M�dulo 2 - Inicia��o ao Mundo da Computa��o,
-//                Programa��o de Computadores e Front-end Fundamentos
+// Disciplina   : Módulo 2 - Iniciação ao Mundo da Computação,
+//                Programação de Computadores e Front-end Fundamentos
 
 // Professor: Marcelo Vasques
 
@@ -13,7 +13,7 @@ var
    destinos: vetor[1..100] de caractere
    opcao, i: inteiro
    nome, destino: caractere
-   
+
 inicio
    repita
       escreval("Menu:")
@@ -24,51 +24,66 @@ inicio
       escreval("5. Sair")
       leia(opcao)
       escolha opcao
-         caso 1
-            escreval("Digite o nome do cliente:")
-            leia(nome)
-            i <- 1
-            enquanto (clientes[i] <> "") e (i <= 100) faca
-               i <- i + 1
-            fimenquanto
-            se i <= 100 entao
-               clientes[i] <- nome
-               escreval("Cliente cadastrado com sucesso!")
-            senao
-               escreval("Erro: limite de clientes atingido!")
+      caso 1
+         escreval("Digite o nome do cliente:")
+         leia(nome)
+         i <- 1
+         enquanto (clientes[i] <> "") e (i <= 100) faca
+            i <- i + 1
+         fimenquanto
+         se i <= 100 entao
+            clientes[i] <- nome
+            escreval("Cliente cadastrado com sucesso!")
+         senao
+            escreval("Erro: limite de clientes atingido!")
+         fimse
+      caso 2
+         escreval("Digite o destino:")
+         leia(destino)
+         i <- 1
+         enquanto (destinos[i] <> "") e (i <= 100) faca
+            i <- i + 1
+         fimenquanto
+         se i <= 100 entao
+            destinos[i] <- destino
+            escreval("Destino cadastrado com sucesso!")
+         senao
+            escreval("Erro: limite de destinos atingido!")
+         fimse
+      caso 3
+         escreval("Clientes cadastrados:")
+         para i de 1 ate 100 faca
+            se clientes[i] <> "" entao
+               escreval(clientes[i])
             fimse
-         caso 2
-            escreval("Digite o destino:")
-            leia(destino)
-            i <- 1
-            enquanto (destinos[i] <> "") e (i <= 100) faca
-               i <- i + 1
-            fimenquanto
-            se i <= 100 entao
-               destinos[i] <- destino
-               escreval("Destino cadastrado com sucesso!")
-            senao
-               escreval("Erro: limite de destinos atingido!")
+         fimpara
+
+         // Adiciona uma pausa antes de limpar a tela
+         escreval("Pressione Enter para continuar...")
+         leia(nome) // Usa a variável 'nome' como uma variável temporária para armazenar o valor lido pelo comando 'leia'
+      caso 4
+         escreval("Destinos cadastrados:")
+         para i de 1 ate 100 faca
+            se destinos[i] <> "" entao
+               escreval(destinos[i])
             fimse
-         caso 3
-            escreval("Clientes cadastrados:")
-            para i de 1 ate 100 faca
-               se clientes[i] <> "" entao
-                  escreval(clientes[i])
-               fimse
-            fimpara
-         caso 4
-            escreval("Destinos cadastrados:")
-            para i de 1 ate 100 faca
-               se destinos[i] <> "" entao
-                  escreval(destinos[i])
-               fimse
-            fimpara
-         caso contrario
-            se opcao <> 5 entao
-               escreval("Op��o inv�lida!")
-            fimse
+         fimpara
+
+         // Adiciona uma pausa antes de limpar a tela
+         escreval("Pressione Enter para continuar...")
+         leia(destino) // Usa a variável 'destino' como uma variável temporária para armazenar o valor lido pelo comando 'leia'
+      caso contrario
+         se opcao <> 5 entao
+            escreval("Opção inválida!")
+         fimse
+
       fimescolha
+
+      // Limpa a tela antes de exibir o menu novamente, mas somente se o usuário não escolheu sair do programa.
+      se opcao <> 5 entao
+         limpatela
+      fimse
+
    ate opcao = 5
 
 fimalgoritmo
