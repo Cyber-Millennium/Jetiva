@@ -1,0 +1,203 @@
+/* estilos gerais */
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Faz com que o elemento div da hero ocupe toda a viewport */
+.hero {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Container do cabeçalho de navegação */
+.navbar {
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilizando a logotipo do menu */
+.navbar-brand img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilizando os links dos itens do menu */
+.navbar-nav li a {
+  list-style: none; /* Remover o marcador de lista padrão */
+  margin-right: 20px; /* Espaçamento entre os itens */
+  text-decoration: none;
+  color: #ff4321;
+  border-radius: 20px;
+  padding: 6px 15px;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.5s, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 67, 33, 0);
+}
+
+/* Estilizando o hover nos links dos itens do menu */
+.navbar-nav li a:not(.active):hover {
+  background-color: #ffffff;
+  color: rgba(255, 67, 33, 0.6);
+  box-shadow: rgba(255, 67, 33, 0.6) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.35) 0 1px 2px, rgba(255, 67, 33, 0.35) 0 2px 4px,
+  rgba(255, 67, 33, 0.35) 0 4px 8px, rgba(255, 67, 33, 0.35) 0 8px 16px,
+  rgba(255, 67, 33, 0.35) 0 16px 32px;
+  transform: scale(1.05) translateY(-5px);
+}
+
+/* Cor da guia ativa */
+.navbar .navbar-nav li a.active {
+  background-color: #ffffff;
+  color: #ff4321;
+  box-shadow: rgba(255, 67, 33, 0.6) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.35) 0 1px 2px, rgba(255, 67, 33, 0.35) 0 2px 4px,
+  rgba(255, 67, 33, 0.35) 0 4px 8px, rgba(255, 67, 33, 0.35) 0 8px 16px,
+  rgba(255, 67, 33, 0.35) 0 16px 32px;
+}
+
+/* Estilo para a seção de destaque */
+.jumbotron {
+  margin-top: -100px; /* Ajusta a margem superior em relação a imagem */
+  margin-left: 10%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 60%; /* Defina uma largura menor para o cabeçalho */
+}
+
+/* Cabeçalho da seção de destaque */
+.jumbotron h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Marcação em laranja para a palavra "Jetiva" do cabeçalho */
+span {
+  color: #ff4321;
+}
+
+/* Parágrafo da seção de destaque */
+.jumbotron p {
+  font-size: 20px;
+}
+
+/* Botão */
+.btn-primary {
+  /*background-color: rgba(255, 67, 33, 0.4);*/
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: rgba(255, 67, 33, 0.4) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.25) 0 1px 2px, rgba(255, 67, 33, 0.25) 0 2px 4px,
+  rgba(255, 67, 33, 0.25) 0 4px 8px, rgba(255, 67, 33, 0.25) 0 8px 16px,
+  rgba(255, 67, 33, 0.25) 0 16px 32px;
+  color: #ff4321;
+  /*color: #721100;*/
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s ease;
+}
+
+/* Hover do botão */
+.btn-primary:hover {
+  /*background-color: rgba(255, 67, 33, 0.5);*/ /* Cor para o fundo escuro*/
+  background-color: #ffffff; /* Cor para o fundo claro */
+  /*color: rgba(255, 67, 33, 0.5);*/
+  color:#ff4321;
+  box-shadow: rgba(255, 67, 33, 0.6) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.35) 0 1px 2px, rgba(255, 67, 33, 0.35) 0 2px 4px,
+  rgba(255, 67, 33, 0.35) 0 4px 8px, rgba(255, 67, 33, 0.35) 0 8px 16px,
+  rgba(255, 67, 33, 0.35) 0 16px 32px;
+  transform: scale(1.05) translateY(-5px);
+}
+
+/* Efeito de clique do botão */
+.btn-primary.btn-primary:active {
+  background-color: #ffffff;
+  color: #ff4321;
+  box-shadow: #000000 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Foco do botão da hero */
+.btn-primary:focus {
+  outline: 0;
+}
+
+/* Conteúdo da hero */
+.header-content{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Imagem da hero */
+.Bkg-img {
+  width: 90%; /* Defina a largura da imagem, pode ser em pixels (px) ou porcentagem (%) */
+  height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+  max-width: 800px; /* Defina um valor máximo para a largura da imagem */
+  display: block; /* A imagem será exibida como bloco, para ajustar a posição corretamente */
+  margin-right: 600px; 
+  margin-top: 100px; /* Adicione uma margem superior para criar espaço entre o cabeçalho e a imagem */
+  padding: 0 50px 100px 0;
+}
+
+/* Estilo do rodapé (footer) */
+footer {
+  padding: 20px 0;
+  font-size: large;
+  color: #ff4321;
+  text-align: center;
+  box-shadow: rgba(255, 67, 33, 0.4) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.25) 0 1px 2px, rgba(255, 67, 33, 0.25) 0 2px 4px,
+  rgba(255, 67, 33, 0.25) 0 4px 8px, rgba(255, 67, 33, 0.25) 0 8px 16px,
+  rgba(255, 67, 33, 0.25) 0 16px 32px;
+  backdrop-filter: blur(4.5px);
+  background: rgba(255, 67, 33, 0.15); 
+}
+
+/* Estilo do rodapé (footer) */
+footer {
+  padding: 20px 0;
+  font-size: large;
+  /*color: #ffffff;*/ /* Cor para o fundo escuro*/
+  color: #721100; /* Cor para o fundo claro*/
+  text-align: center;
+  box-shadow: rgba(255, 67, 33, 0.5) 0 -25px 18px -14px inset,
+  rgba(255, 67, 33, 0.25) 0 1px 2px, rgba(255, 67, 33, 0.25) 0 2px 4px,
+  rgba(255, 67, 33, 0.25) 0 4px 8px, rgba(255, 67, 33, 0.25) 0 8px 16px,
+  rgba(255, 67, 33, 0.25) 0 16px 32px;
+  backdrop-filter: blur(4.5px);
+  background: rgba(255, 67, 33, 0.15);
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color:#ff4321
+}

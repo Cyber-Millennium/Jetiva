@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Contato</title>
+    <meta
+      name="description"
+      content="Explore destinos incríveis e embarque em uma aventura inesquecível com a nossa agência de viagens. Oferecemos pacotes promocionais para lugares deslumbrantes como Fujiyoshida, Japão, Thórsmörk, Islândia, e muito mais. Desfrute de paisagens de tirar o fôlego, mergulhe em culturas fascinantes e crie memórias que durarão a vida toda em nossas viagens guiadas. Se você quer explorar o mundo em alto estilo, viaje com a Jetiva!"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Jonnathan Ribeiro dos Santos" />
+    <meta name="copyright" content="Jonnathan Ribeiro dos Santos" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/logo/site.webmanifest" />
+    <!-- CSS do Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Arquivo style.css -->
+    <link rel="stylesheet" href="/css/contato.css" />
+  </head>
+  <body>
+    <!-- Conteúdo da página -->
+    <div class="container">
+      <div class="hero">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="\img\logo\Jetiva.png" alt="Jetiva" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promocoes.html">Promoções</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Cabeçalho com imagem de destaque -->
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="card p-4">
+            <h1 class="text-center mb-4">Formulário de Contato</h1>
+            <form action="#" method="POST">
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  name="nome"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="assunto"
+                  name="assunto"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea
+                  class="form-control"
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Início do Rodapé -->
+    <footer>
+      <div class="container">
+        <p>Todos os direitos reservados © 2023 Jetiva</p>
+        <p>
+          Entre em contato:
+          <a href="mailto:contato@jetiva.com">contato@jetiva.com</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Fim do Rodapé -->
+
+    <!-- Link para o JavaScript do Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link do JavaScript -->
+    <script src="/js/contato.js"></script>
+  </body>
+</html>
