@@ -9,9 +9,9 @@ function setActiveLink() {
   })
 
   // Adiciona a classe .active ao link correspondente à página atual
-  if (currentPage.includes("index.html")) {
+  if (currentPage.includes("home.html")) {
     document
-      .querySelector('.navbar-nav li a[href="index.html"]')
+      .querySelector('.navbar-nav li a[href="home.html"]')
       .classList.add("active")
   } else if (currentPage.includes("destinos.html")) {
     document
