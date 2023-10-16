@@ -13,6 +13,7 @@ var
    destinos: vetor[1..100] de caractere
    opcao, i: inteiro
    nome, destino: caractere
+   vazio: logico // Declara uma variável booleana para verificar se os vetores estão vazios
 
 inicio
    repita
@@ -25,7 +26,7 @@ inicio
       leia(opcao)
       escolha opcao
       caso 1
-         escreval("Digite o nome do cliente:")
+         escreva("Digite o nome do cliente:")
          leia(nome)
          i <- 1
          enquanto (clientes[i] <> "") e (i <= 100) faca
@@ -38,7 +39,7 @@ inicio
             escreval("Erro: limite de clientes atingido!")
          fimse
       caso 2
-         escreval("Digite o destino:")
+         escreva("Digite o destino:")
          leia(destino)
          i <- 1
          enquanto (destinos[i] <> "") e (i <= 100) faca
@@ -52,27 +53,45 @@ inicio
          fimse
       caso 3
          escreval("Clientes cadastrados:")
+         vazio <- verdadeiro // Atribui verdadeiro a vazio antes de percorrer o vetor clientes
          para i de 1 ate 100 faca
             se clientes[i] <> "" entao
                escreval(clientes[i])
+               vazio <- falso // Muda o valor de vazio para falso se encontrar algum elemento não vazio
             fimse
          fimpara
+
+         // Verifica se vazio ainda é verdadeiro depois do laço e exibe a mensagem correspondente
+         se vazio entao
+            escreval("Nenhum cliente cadastrado.")
+         senao
+            escreval("Fim da lista de clientes.")
+         fimse
 
          // Adiciona uma pausa antes de limpar a tela
          escreval("Pressione Enter para continuar...")
          leia(nome) // Usa a variável 'nome' como uma variável temporária para armazenar o valor lido pelo comando 'leia'
       caso 4
          escreval("Destinos cadastrados:")
+         vazio <- verdadeiro // Atribui verdadeiro a vazio antes de percorrer o vetor destinos
          para i de 1 ate 100 faca
             se destinos[i] <> "" entao
                escreval(destinos[i])
+               vazio <- falso // Muda o valor de vazio para falso se encontrar algum elemento não vazio
             fimse
          fimpara
+
+         // Verifica se vazio ainda é verdadeiro depois do laço e exibe a mensagem correspondente
+         se vazio entao
+            escreval("Nenhum destino cadastrado.")
+         senao
+            escreval("Fim da lista de destinos.")
+         fimse
 
          // Adiciona uma pausa antes de limpar a tela
          escreval("Pressione Enter para continuar...")
          leia(destino) // Usa a variável 'destino' como uma variável temporária para armazenar o valor lido pelo comando 'leia'
-      caso contrario
+      outrocaso
          se opcao <> 5 entao
             escreval("Opção inválida!")
          fimse

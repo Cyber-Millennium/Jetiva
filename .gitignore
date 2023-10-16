@@ -24,3 +24,6 @@ temp/
 
 # Ignore cache files / Ignorar arquivos de cache
 *.cache
+
+# Ignore .metadata directory / Ignorar diretório .metadata
+.metadata/
