@@ -3,71 +3,70 @@ package modelos;
 public class Passagens {
 	
 	// Atributos
-	private int ID;
-	private String Empresa; 
-	private String Destino;
+	private int id;
+	private String empresa; 
+	private String destino;
 	private String dataIda;
 	private String dataVolta;
 	private String horaIda;
 	private String horaVolta;
-	private int Passagem;
-	private String codigoReserva;
+	private String assento;
+	private String codigo;
 	private String portaoDeEmbarque;
 	
 	// Construtor
 	public Passagens() {
 	}
 
-	public Passagens(int iD, String empresa, String destino, String dataIda, String dataVolta, String horaIda,
-			String horaVolta, int passagem, String reserva, String portaoDeEmbarque) {
-		ID = iD;
-		Empresa = empresa;
-		Destino = destino;
+	public Passagens(int id, String empresa, String destino, String dataIda, String dataVolta, String horaIda,
+			String horaVolta, String assento, String codigo, String portaoDeEmbarque) {
+		this.id = id;
+		this.empresa = empresa;
+		this.destino = destino;
 		this.dataIda = dataIda;
 		this.dataVolta = dataVolta;
 		this.horaIda = horaIda;
 		this.horaVolta = horaVolta;
-		Passagem = passagem;
-		codigoReserva = reserva;
+		this.assento= assento;
+		this.codigo = codigo;
 		this.portaoDeEmbarque = portaoDeEmbarque;
 	}
 
-	public Passagens(String empresa, String destino, String dataIda, String dataVolta, String horaIda, String horaVolta,
-			int passagem, String reserva, String portaoDeEmbarque) {
-		Empresa = empresa;
-		Destino = destino;
+	public Passagens(String empresa, String destino, String dataIda, String dataVolta, String horaIda, String horaVolta, String assento, String codigo, String portaoDeEmbarque) {
+		this.empresa = empresa;
+		this.destino = destino;
 		this.dataIda = dataIda;
 		this.dataVolta = dataVolta;
 		this.horaIda = horaIda;
 		this.horaVolta = horaVolta;
-		Passagem = passagem;
-		codigoReserva = reserva;
+		this.assento = assento;
+		this.codigo = codigo;
 		this.portaoDeEmbarque = portaoDeEmbarque;
 	}
 	
 	// Getters e Setters
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 	public String getEmpresa() {
-		return Empresa;
+		return empresa;
 	}
 
 	public void setEmpresa(String empresa) {
-		Empresa = empresa;
+		this.empresa = empresa;
 	}
 
 	public String getDestino() {
-		return Destino;
+		return destino;
 	}
 
 	public void setDestino(String destino) {
-		Destino = destino;
+		this.destino = destino;
 	}
 
 	public String getDataIda() {
@@ -102,20 +101,20 @@ public class Passagens {
 		this.horaVolta = horaVolta;
 	}
 
-	public int getPassagem() {
-		return Passagem;
+	public String getAssento() {
+		return assento;
 	}
 
-	public void setPassagem(int passagem) {
-		Passagem = passagem;
+	public void setAssento(String assento) {
+		this.assento = assento;
 	}
 
-	public String getReserva() {
-		return codigoReserva;
+	public String getCodigo() {
+		return codigo;
 	}
 
-	public void setReserva(String reserva) {
-		codigoReserva = reserva;
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
 	}
 
 	public String getPortaoDeEmbarque() {
@@ -129,8 +128,9 @@ public class Passagens {
 	// toString
 	@Override
 	public String toString() {
-		return "Passagens [ID=" + ID + ", Empresa=" + Empresa + ", Destino=" + Destino + ", dataIda=" + dataIda
-				+ ", dataVolta=" + dataVolta + ", horaIda=" + horaIda + ", horaVolta=" + horaVolta + ", Passagem="
-				+ Passagem + ", Reserva=" + codigoReserva + ", portaoDeEmbarque=" + portaoDeEmbarque + "]";
+		return "Passagens [id=" + id + ", empresa=" + empresa + ", destino=" + destino + ", dataIda=" + dataIda
+				+ ", dataVolta=" + dataVolta + ", horaIda=" + horaIda + ", horaVolta=" + horaVolta + ", assento="
+				+ assento + ", codigo=" + codigo + ", portaoDeEmbarque=" + portaoDeEmbarque + "]";
 	}
+
 }

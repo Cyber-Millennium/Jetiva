@@ -3,111 +3,111 @@ package modelos;
 public class Reservas {
 	
 	// Atributos
-	private int ID;
-	private String Origem;
-	private String Destino;
-	private String Empresa;
-	private String Classe;
-	private String Assento;
-	private String Preco;
-	private Float Codigo;
+	private int id;
+	private String origem;
+	private String destino;
+	private String empresa;
+	private String classe;
+	private String assento;
+	private Double preco;
+	private String codigo;
 	
 	// Construtor
 	public Reservas() {
 	}
 
-	public Reservas(int iD, String origem, String destino, String empresa, String classe, String assento, String preco,
-			Float codigo) {
-		ID = iD;
-		Origem = origem;
-		Destino = destino;
-		Empresa = empresa;
-		Classe = classe;
-		Assento = assento;
-		Preco = preco;
-		Codigo = codigo;
+	public Reservas(int id, String origem, String destino, String empresa, String classe, String assento, Double preco,
+			String codigo) {
+		this.id = id;
+		this.origem = origem;
+		this.destino = destino;
+		this.empresa = empresa;
+		this.classe = classe;
+		this.assento = assento;
+		this.preco = preco;
+		this.codigo = codigo;
 	}
 
-	public Reservas(String origem, String destino, String empresa, String classe, String assento, String preco,
-			Float codigo) {
-		Origem = origem;
-		Destino = destino;
-		Empresa = empresa;
-		Classe = classe;
-		Assento = assento;
-		Preco = preco;
-		Codigo = codigo;
+	public Reservas(String origem, String destino, String empresa, String classe, String assento, Double preco,
+			String codigo) {
+		this.origem = origem;
+		this.destino = destino;
+		this.empresa = empresa;
+		this.classe = classe;
+		this.assento = assento;
+		this.preco = preco;
+		this.codigo = codigo;
 	}
 	
 	// Getters e Setters
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 	public String getOrigem() {
-		return Origem;
+		return origem;
 	}
 
 	public void setOrigem(String origem) {
-		Origem = origem;
+		this.origem = origem;
 	}
 
 	public String getDestino() {
-		return Destino;
+		return destino;
 	}
 
 	public void setDestino(String destino) {
-		Destino = destino;
+		this.destino = destino;
 	}
 
 	public String getEmpresa() {
-		return Empresa;
+		return empresa;
 	}
 
 	public void setEmpresa(String empresa) {
-		Empresa = empresa;
+		this.empresa = empresa;
 	}
 
 	public String getClasse() {
-		return Classe;
+		return classe;
 	}
 
 	public void setClasse(String classe) {
-		Classe = classe;
+		this.classe = classe;
 	}
 
 	public String getAssento() {
-		return Assento;
+		return assento;
 	}
 
 	public void setAssento(String assento) {
-		Assento = assento;
+		this.assento = assento;
 	}
 
-	public String getPreco() {
-		return Preco;
+	public Double getPreco() {
+		return preco;
 	}
 
-	public void setPreco(String preco) {
-		Preco = preco;
+	public void setPreco(double preco) {
+		this.preco = preco;
 	}
 
-	public Float getCodigo() {
-		return Codigo;
+	public String getCodigo() {
+		return codigo;
 	}
 
-	public void setCodigo(Float codigo) {
-		Codigo = codigo;
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
 	}
 	
-	// toString
 	@Override
 	public String toString() {
-		return "Reservas [ID=" + ID + ", Origem=" + Origem + ", Destino=" + Destino + ", Empresa=" + Empresa
-				+ ", Classe=" + Classe + ", Assento=" + Assento + ", Preco=" + Preco + ", Codigo=" + Codigo + "]";
+		return "Reservas [id=" + id + ", origem=" + origem + ", destino=" + destino + ", empresa=" + empresa
+				+ ", classe=" + classe + ", assento=" + assento + ", Preco=" + preco + ", Codigo=" + codigo + "]";
 	}
+
 }

@@ -3,157 +3,158 @@ package modelos;
 public class Contatos {
 	
 	// Atributos
-	private int ID;
-	private String Nome;
-	private String Email;
-	private String Telefone;
-	private String CEP;
-	private String Endereço;
-	private String Numero;
-	private String Complemento;
-	private String Bairro;
-	private String Estado;
-	private String Cidade;
-	private String Mensagem;
+	private int id;
+	private String nome;
+	private String email;
+	private String telefone;
+	private String cep;
+	private String endereco;
+	private String numero;
+	private String complemento;
+	private String bairro;
+	private String estado;
+	private String cidade;
+	private String mensagem;
 
 	
 	// Construtor
 	public Contatos() {
 	}
 
-	public Contatos(int iD, String nome, String email, String telefone, String cEP, String endereço, String numero,
+	public Contatos(int id, String nome, String email, String telefone, String cep, String endereco, String numero,
 			String complemento, String bairro, String estado, String cidade, String mensagem) {
-		ID = iD;
-		Nome = nome;
-		Email = email;
-		Telefone = telefone;
-		CEP = cEP;
-		Endereço = endereço;
-		Numero = numero;
-		Complemento = complemento;
-		Bairro = bairro;
-		Estado = estado;
-		Cidade = cidade;
-		Mensagem = mensagem;
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+		this.cep = cep;
+		this.endereco = endereco;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.estado = estado;
+		this.cidade = cidade;
+		this.mensagem = mensagem;
 	}
 
-	public Contatos(String nome, String email, String telefone, String cEP, String endereço, String numero,
+	public Contatos(String nome, String email, String telefone, String cep, String endereco, String numero,
 			String complemento, String bairro, String estado, String cidade, String mensagem) {
-		Nome = nome;
-		Email = email;
-		Telefone = telefone;
-		CEP = cEP;
-		Endereço = endereço;
-		Numero = numero;
-		Complemento = complemento;
-		Bairro = bairro;
-		Estado = estado;
-		Cidade = cidade;
-		Mensagem = mensagem;
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+		this.cep = cep;
+		this.endereco = endereco;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.estado = estado;
+		this.cidade = cidade;
+		this.mensagem = mensagem;
 	}
 
 	// Getters e Setters
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public String getTelefone() {
-		return Telefone;
+		return telefone;
 	}
 
 	public void setTelefone(String telefone) {
-		Telefone = telefone;
+		this.telefone = telefone;
 	}
 
 	public String getCEP() {
-		return CEP;
+		return cep;
 	}
 
-	public void setCEP(String cEP) {
-		CEP = cEP;
+	public void setCEP(String cep) {
+		this.cep = cep;
 	}
 
-	public String getEndereço() {
-		return Endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		Endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public String getNumero() {
-		return Numero;
+		return numero;
 	}
 
 	public void setNumero(String numero) {
-		Numero = numero;
+		this.numero = numero;
 	}
 
 	public String getComplemento() {
-		return Complemento;
+		return complemento;
 	}
 
 	public void setComplemento(String complemento) {
-		Complemento = complemento;
+		this.complemento = complemento;
 	}
 
 	public String getBairro() {
-		return Bairro;
+		return bairro;
 	}
 
 	public void setBairro(String bairro) {
-		Bairro = bairro;
+		this.bairro = bairro;
 	}
 
 	public String getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(String estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
 	public String getCidade() {
-		return Cidade;
+		return cidade;
 	}
 
 	public void setCidade(String cidade) {
-		Cidade = cidade;
+		this.cidade = cidade;
 	}
 
 	public String getMensagem() {
-		return Mensagem;
+		return mensagem;
 	}
 
 	public void setMensagem(String mensagem) {
-		Mensagem = mensagem;
+		this.mensagem = mensagem;
 	}
 	
 	// toString
 	@Override
 	public String toString() {
-		return "Contatos [ID=" + ID + ", Nome=" + Nome + ", Email=" + Email + ", Telefone=" + Telefone + ", CEP=" + CEP
-				+ ", Endereço=" + Endereço + ", Numero=" + Numero + ", Complemento=" + Complemento + ", Bairro="
-				+ Bairro + ", Estado=" + Estado + ", Cidade=" + Cidade + ", Mensagem=" + Mensagem + "]";
+		return "Contatos [id=" + id + ", nome=" + nome + ", email=" + email + ", telefone=" + telefone + ", cep=" + cep
+				+ ", endereco=" + endereco + ", numero=" + numero + ", complemento=" + complemento + ", bairro="
+				+ bairro + ", estado=" + estado + ", cidade=" + cidade + ", mensagem=" + mensagem + "]";
 	}
+	
 }

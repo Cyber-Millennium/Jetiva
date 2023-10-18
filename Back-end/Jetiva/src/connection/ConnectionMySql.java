@@ -3,12 +3,12 @@ package connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class ConnectionMySql {
+public class ConnectionMySQL {
     private static final String URL = "jdbc:mysql://localhost:3306/jetiva";
     private static final String USER = "root";
     private static final String PASSWORD = "Lacuna@84248293181578";
 
-    public Connection createConnectionMySQL() throws Exception {
+    public static Connection createConnectionMySQL() throws Exception {
         // Faz com que a classe seja carregada pela JVM
         Class.forName("com.mysql.cj.jdbc.Driver");
         
@@ -20,7 +20,7 @@ public class ConnectionMySql {
 
     public static void main(String[] args) throws Exception {
         // Recupera uma conexão com o banco de dados 
-        Connection con = new ConnectionMySql().createConnectionMySQL();
+        Connection con = new ConnectionMySQL().createConnectionMySQL();
 
         // Testar a Conexão
         if (con != null) {

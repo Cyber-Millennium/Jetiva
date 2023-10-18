@@ -6,7 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/jonna/Desktop/Jetiva 2.0/Back-end/mysql-connector-j-8.1.0.jar">
+	<classpathentry kind="lib" path="C:/Users/jonna/Documents/GitHub/Jetiva/Back-end/mysql-connector-j-8.1.0.jar" sourcepath="C:/Users/jonna/Documents/GitHub/Jetiva/Back-end">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

@@ -3,65 +3,65 @@ package modelos;
 public class Usuarios {
 	
 	// Atributos
-	private int ID;
-	private String Nome;
-	private String Email;
-	private String Senha;
+	private int id;
+	private String nome;
+	private String email;
+	private String senha;
 
 	// Construtor
 	public Usuarios() {
 	}
 	
-	public Usuarios(int iD, String nome, String email, String senha) {
-		ID = iD;
-		Nome = nome;
-		Email = email;
-		Senha = senha;
+	public Usuarios(int id, String nome, String email, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
 	}
 
 	public Usuarios(String nome, String email, String senha) {
-		Nome = nome;
-		Email = email;
-		Senha = senha;
+		this.nome = nome;
+		this.email = email;
+		this.senha = senha;
 	}
 
 	// Getters e Setters
-	
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public String getSenha() {
-		return Senha;
+		return senha;
 	}
 
 	public void setSenha(String senha) {
-		Senha = senha;
+		this.senha = senha;
 	}
 
 	//toString
 	@Override
 	public String toString() {
-		return "Usuarios [ID=" + ID + ", Nome=" + Nome + ", Email=" + Email + ", Senha=" + Senha + "]";
+		return "Usuarios [id=" + id + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
 	}
+
 }
